@@ -1,7 +1,7 @@
 // CameraProps.jsx
 import { useEffect } from "react";
 import { useThree } from "@react-three/fiber";
-import { useCameraController } from "../Hooks";
+import { useCameraController } from "../../Hooks/index.js";
 
 const CameraProps = () => {
   const { camera } = useThree();
