@@ -1,3 +1,10 @@
+@import "tailwindcss";
+
+@theme{
+    --color-uniatBG: rgba(255, 140, 0, 0.73);
+    --color-orangeText: rgb(255, 145, 0);
+}
+
 * {
   margin: 0;
 }
