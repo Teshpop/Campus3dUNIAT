@@ -1,7 +1,6 @@
-import { Canvas, useThree } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { Canvas} from "@react-three/fiber";
+import { OrbitControls} from "@react-three/drei";
 import { Model, CameraProps } from "../Components";
-import { useEffect } from "react";
 
 const Experience = () => {
   return (
@@ -11,11 +10,12 @@ const Experience = () => {
 
       {/* Lights */}
 
-      <ambientLight />
+      <ambientLight intensity={0.5}/>
+      <directionalLight intensity={1} color={"#FFF1E0"}/>
 
       {/* //////////// */}
 
-      {/* <OrbitControls /> */}
+       {/*<OrbitControls />*/}
     </Canvas>
   );
 };
