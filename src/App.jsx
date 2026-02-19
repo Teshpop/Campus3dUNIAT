@@ -1,11 +1,10 @@
-import { Experience } from "layout";
-import { Welcome } from "./Components";
+import {Experience, BaseCard} from '@/Layout'
 
 const App = () => {
   return (
-    <div className="test">
+    <div>
       <Experience />
-        <Welcome />
+      <BaseCard title={"Bienvenido a UNIAT San Luis Potosi"} description={"Donde tus ideas dejan de ser sueños y se vuelven proyectos reales."}/>
     </div>
   );
 };

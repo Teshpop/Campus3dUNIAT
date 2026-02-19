@@ -1,3 +1,5 @@
 import Experience from "./Experience.jsx";
+import BaseCard from './BaseCard.jsx'
 
-export { Experience };
+
+export { Experience, BaseCard};
