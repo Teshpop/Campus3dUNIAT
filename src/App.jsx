@@ -1,10 +1,15 @@
-import {Experience, BaseCard} from '@/Layout'
+import { Experience, TourCards } from "@/Layout";
+import { useTourController } from "@/Hooks/tourController";
 
 const App = () => {
+  const { card } = useTourController();
+
+  console.log(card);
+
   return (
     <div>
       <Experience />
-      <BaseCard title={"Bienvenido a UNIAT San Luis Potosi"} description={"Donde tus ideas dejan de ser sueños y se vuelven proyectos reales."}/>
+      <TourCards />
     </div>
   );
 };
