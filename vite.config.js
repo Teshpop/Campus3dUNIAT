@@ -9,6 +9,7 @@ export default defineConfig({
       react(),
       tailwindcss(),
   ],
+  base: "/Campus3dUNIAT/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
