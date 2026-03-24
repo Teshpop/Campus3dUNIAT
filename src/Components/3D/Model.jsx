@@ -3,13 +3,13 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
 const Model = () => {
-  const object = useGLTF("/Campus_Fixed.glb");
+  const object = useGLTF("/Campus3dUNIAT/Campus_Fixed.glb");
   const meshGeometry = object.meshes.Object001001.geometry;
 
   const baseColor = useTexture("textures/DefaultMaterial_baseColor_1001.png");
   const normal = useTexture("textures/DefaultMaterial_normal_1001.png");
   const ao = useTexture(
-    "textures/DefaultMaterial_occlusionRoughnessMetallic_1001.png"
+    "textures/DefaultMaterial_occlusionRoughnessMetallic_1001.png",
   );
 
   baseColor.flipY = false;
